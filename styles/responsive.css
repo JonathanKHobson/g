@@ -31,8 +31,35 @@
   .case-list,
   .project-index-grid,
   .super-evidence-grid,
-  .artifact-grid {
+  .artifact-grid,
+  .goldspire-fact-grid,
+  .goldspire-character-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .event-card-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .home-event-card {
+    grid-template-columns: 1fr;
+  }
+
+  .home-event-card .event-actions {
+    width: 100%;
+  }
+
+  .home-event-card .event-actions .btn {
+    justify-content: center;
+  }
+
+  .event-card-media,
+  .event-card-media img {
+    min-height: 18rem;
+  }
+
+  .final-cta-panel {
+    grid-template-columns: 1fr;
   }
 
   .trust-band .wrap {
@@ -56,6 +83,7 @@
 
   .story-feature,
   .playlist-feature,
+  .short-form-feature,
   .story-link-cards,
   .story-video-grid,
   .readable-artifact,
@@ -79,6 +107,19 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hero-proof-metrics {
+    gap: 0.45rem;
+  }
+
+  .hero-proof-metrics span {
+    min-height: 4.85rem;
+    padding: 0.58rem;
+  }
+
+  .hero-proof-metrics strong {
+    font-size: 2.35rem;
+  }
+
   .mechanic-feature-reverse .mechanic-feature-copy {
     order: 0;
   }
@@ -96,6 +137,10 @@
 
   .playlist-feature-reverse .playlist-copy {
     order: 0;
+  }
+
+  .short-form-copy {
+    position: static;
   }
 
   .readable-artifact-reverse figure {
@@ -243,6 +288,12 @@
 
   .artifact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .event-card-featured,
+  .goldspire-path-strip .wrap,
+  .final-cta-panel {
+    grid-template-columns: 1fr;
   }
 
   .case-stat-grid,
@@ -605,10 +656,15 @@
 
   .detail-grid,
   .detail-proof-grid,
+  .event-facts,
+  .goldspire-path-strip .wrap,
+  .goldspire-fact-grid,
+  .goldspire-character-grid,
   .project-index-grid,
   .super-evidence-grid,
   .story-feature,
   .playlist-feature,
+  .short-form-feature,
   .story-proof-grid,
   .story-link-cards,
   .story-video-grid,
@@ -649,6 +705,46 @@
 
   .artifact-card > img {
     height: 12rem;
+  }
+
+  .event-card-copy h3 {
+    max-width: 100%;
+  }
+
+  .event-card-media,
+  .event-card-media img {
+    min-height: 14rem;
+  }
+
+  .goldspire-character-card img {
+    height: 15rem;
+  }
+
+  .goldspire-sticky-cta {
+    position: fixed;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    z-index: 180;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.5rem;
+    border: 1px solid rgba(248, 237, 218, 0.22);
+    border-radius: 999px;
+    background: rgba(7, 19, 25, 0.9);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+    padding: 0.45rem;
+    transition: opacity 160ms ease, transform 160ms ease;
+  }
+
+  .goldspire-detail {
+    padding-bottom: 5rem;
+  }
+
+  .goldspire-sticky-cta .btn {
+    min-height: 2.65rem;
+    padding-right: 0.85rem;
+    padding-left: 0.85rem;
   }
 
   .case-stat-card {
@@ -774,6 +870,16 @@
 
   .story-prop-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .short-form-rail {
+    max-height: 40rem;
+    padding-right: 0.25rem;
+  }
+
+  .short-form-card .tiktok-embed,
+  .short-form-card .tiktok-embed a {
+    min-height: 34rem;
   }
 
   .story-prop {
